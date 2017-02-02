@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\layout\\widget_donate.xml",
+        "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\layout\\widget_donate.xml"
+    },
+    {
+        "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vario.xml",
+        "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\layout\\vario.xml"
+    },
+    {
+        "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\layout\\seek_bar_preference.xml",
+        "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\layout\\seek_bar_preference.xml"
+    },
+    {
+        "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_with_value.xml",
+        "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\layout\\preference_with_value.xml"
+    },
+    {
+        "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\layout\\poi.xml",
+        "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\layout\\poi.xml"
+    }
+]

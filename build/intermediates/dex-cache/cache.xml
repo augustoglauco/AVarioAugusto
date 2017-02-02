@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ab3954d9d593eeb65292fb8b0a06d866089c863">
+        <dex dex="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cd662fe1e858598904b21105ae8a79de8788bcdc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b8fa61d567597a1aeaccbdcb69d893b85bc10717">
+        <dex dex="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_464e87e7d385d37c84af5f442b1013ea9804cfcf\classes.dex" />
+    </item>
+
+</items>
