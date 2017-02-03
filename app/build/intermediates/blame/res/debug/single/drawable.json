@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\drawable\\round_border.xml"
     },
     {
-        "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\windsock.png",
-        "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\drawable\\windsock.png"
-    },
-    {
         "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
         "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\windsock.png",
+        "source": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\src\\main\\res\\drawable\\windsock.png"
     },
     {
         "merged": "C:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\spiral.png",

@@ -61,6 +61,11 @@
             android:label="@string/poi"
             android:screenOrientation="portrait" >
         </activity>
+
+        <service
+            android:name=".DownloadIntentService"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

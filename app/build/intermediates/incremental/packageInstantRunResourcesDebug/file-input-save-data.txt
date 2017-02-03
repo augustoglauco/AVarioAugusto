@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 31 22:52:59 BRST 2017
+#Fri Feb 03 00:15:05 BRST 2017
 25.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\s360.wav
 25.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
 22.set=ANDROID_RESOURCE
@@ -28,7 +28,7 @@ count=30
 7.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
 7.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
 15.set=ANDROID_RESOURCE
-27.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\buzzer.wav
+27.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\preference_with_value.xml
 27.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
 1.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\s340.wav
 1.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -44,8 +44,8 @@ count=30
 17.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\round_border.xml
 25.set=ANDROID_RESOURCE
 17.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
-10.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\spiral.png
-28.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\preference_with_value.xml
+10.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\prenotify.wav
+28.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\buzzer.wav
 10.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
 28.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
 14.set=ANDROID_RESOURCE
@@ -55,7 +55,7 @@ count=30
 22.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_
 0.set=ASSET
 19.set=ANDROID_RESOURCE
-9.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\prenotify.wav
+9.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\spiral.png
 5.set=ANDROID_RESOURCE
 18.file=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-land\\vario.xml
 9.base=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\res\\resources-debug.ap_

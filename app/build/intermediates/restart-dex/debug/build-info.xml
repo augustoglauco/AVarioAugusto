@@ -1,36 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="xxhdpi"
+    density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="9386647740116"
+    timestamp="22039582725606"
     token="4074817763833103173"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1642" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="23" />
     <task
         name="verifier"
-        duration="0" />
+        duration="6" />
+
+    <artifact
+        location="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="9154825603159"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="16176065334570"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="9386647740116"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="20635070778700"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="22039582725606"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
+    </build>
 
 </instant-run>

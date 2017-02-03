@@ -1,31 +1,19 @@
 package org.avario.ui.prefs;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.StatusLine;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.avario.R;
-import org.avario.engine.datastore.DataAccessObject;
-import org.avario.utils.StringFormatter;
-import org.w3c.dom.Document;
-import org.xml.sax.SAXException;
-
 import android.content.Context;
 import android.hardware.SensorManager;
 import android.preference.EditTextPreference;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.io.IOException;
-import java.util.Date;
+import org.avario.R;
+import org.avario.engine.datastore.DataAccessObject;
+import org.avario.utils.StringFormatter;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
+/*
 class metar {
 	private String codigo;
 	private String atualizacao;
@@ -120,9 +108,13 @@ class metar {
 
 
 }
+*/
 
 
 public class EditQNHValue extends EditTextPreference {
+
+	//private static final String URL = "http://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss";
+	//private static final int RSS_DOWNLOAD_REQUEST_CODE = 0;
 
 	protected TextView mValueText;
 
@@ -139,7 +131,6 @@ public class EditQNHValue extends EditTextPreference {
 	@Override
 	protected void onBindView(View view) {
 		super.onBindView(view);
-		String pressao = getMetar("SGBL");
 		mValueText = (TextView) view.findViewById(R.id.preference_value);
 		if (mValueText != null) {
 			mValueText.setText(getText());
@@ -160,45 +151,6 @@ public class EditQNHValue extends EditTextPreference {
 			}
 		}
 		super.setText(text);
-
-	}
-
-	private String getMetar (String estacao)
-	{
-		String pressao = "1013.25";
-
-		String address = String.format("http://servicos.cptec.inpe.br/XML/estacao/%s/condicoesAtuais.xml", estacao);
-
-		HttpGet uri = new HttpGet(address);
-
-		DefaultHttpClient client = new DefaultHttpClient();
-		HttpResponse resp = null;
-		try {
-			resp = client.execute(uri);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		StatusLine status = resp.getStatusLine();
-		if (status.getStatusCode() != 200) {
-			Log.d("xxx", "HTTP error, invalid server status code: " + resp.getStatusLine());
-		}
-
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder builder = null;
-		try {
-			builder = factory.newDocumentBuilder();
-			Document doc = builder.parse(resp.getEntity().getContent());
-
-		} catch (ParserConfigurationException e) {
-			e.printStackTrace();
-		} catch (SAXException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		return pressao;
 	}
 
 	private String computeQNHFromAltitude(int newAltitude) {

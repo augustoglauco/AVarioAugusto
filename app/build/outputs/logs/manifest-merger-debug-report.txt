@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:2:1-66:12
+ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:2:1-71:12
 	package
 		ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:3:5-25
 		INJECTED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml
@@ -74,7 +74,7 @@ ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\And
 	android:name
 		ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:22:22-64
 application
-ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:24:5-64:19
+ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:24:5-69:19
 	android:label
 		ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:26:9-39
 	android:icon
@@ -139,3 +139,9 @@ ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\And
 		ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:61:13-40
 	android:name
 		ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:60:13-47
+service#org.avario.DownloadIntentService
+ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:65:9-67:39
+	android:exported
+		ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:67:13-37
+	android:name
+		ADDED from C:\Users\Augusto\AndroidStudioProjects\AVarioAugusto\app\src\main\AndroidManifest.xml:66:13-50

@@ -12,6 +12,7 @@ import org.avario.ui.NavigatorUpdater;
 import org.avario.ui.NumericViewUpdater;
 import org.avario.ui.VarioMeterScaleUpdater;
 import org.avario.ui.poi.PoiList;
+import org.avario.ui.prefs.IllustrativeRSS;
 import org.avario.ui.prefs.PreferencesMenu;
 import org.avario.ui.tracks.TracksList;
 import org.avario.utils.Logger;
@@ -42,6 +43,11 @@ public class AVarioActivity extends Activity {
 	private PowerManager.WakeLock wakeLock;
 	private int startVolume = Integer.MIN_VALUE;
 	private boolean viewCreated = false;
+
+	private static final int RSS_DOWNLOAD_REQUEST_CODE = 0;
+	//private static final String URL = "http://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss";
+	//private static final String URL = String.format("http://servicos.cptec.inpe.br/XML/estacao/%s/condicoesAtuais.xml", "SBRJ");
+
 
 	public AVarioActivity() {
 		super();
@@ -101,7 +107,7 @@ public class AVarioActivity extends Activity {
 
 			Logger.init();
 			initializeSensors();
-			Donate.get().init();
+			//Donate.get().init();
 		} catch (Throwable e) {
 			Logger.get().log("Fail on create ", e);
 		}
@@ -149,11 +155,16 @@ public class AVarioActivity extends Activity {
 			startActivityForResult(new Intent(this, TracksList.class), 2);
 			return true;
 		case R.id.donate:
-			if (Donate.get().getItems().size() == 0) {
-				Toast.makeText(this, R.string.donate_not_available, Toast.LENGTH_SHORT).show();				
-				return true;
-			}
-			startActivityForResult(new Intent(this, DonateList.class), 3);
+
+			String URL = String.format("http://servicos.cptec.inpe.br/XML/estacao/%s/condicoesAtuais.xml", "SBRJ");
+			PendingIntent pendingResult = createPendingResult(
+					RSS_DOWNLOAD_REQUEST_CODE, new Intent(), 0);
+			Intent intent = new Intent(getApplicationContext(), DownloadIntentService.class);
+			intent.putExtra(DownloadIntentService.URL_EXTRA, URL);
+			intent.putExtra(DownloadIntentService.PENDING_RESULT_EXTRA, pendingResult);
+			startService(intent);
+
+			//startActivityForResult(new Intent(this, DonateList.class), 3);
 			return true;
 		case R.id.poi:
 			startActivityForResult(new Intent(this, PoiList.class), 4);
@@ -237,9 +248,47 @@ public class AVarioActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (requestCode == BTScanner.INTENT_ID) {
 			BTScanner.get().onActivityResult(requestCode, resultCode, data);
-		} else if (!Donate.get().handleActivityResult(requestCode, resultCode, data)) {
-		} else {
+		}
+		else if (requestCode == RSS_DOWNLOAD_REQUEST_CODE) {
+			switch (resultCode) {
+				case DownloadIntentService.INVALID_URL_CODE:
+					handleInvalidURL();
+					break;
+				case DownloadIntentService.ERROR_CODE:
+					handleError(data);
+					break;
+				case DownloadIntentService.RESULT_CODE:
+					handleRSS(data);
+					break;
+			}
+			handleRSS(data);
+		}
+		else
+		{
 			super.onActivityResult(requestCode, resultCode, data);
 		}
 	}
+
+	private void handleRSS(Intent data) {
+		IllustrativeRSS rss = data.getParcelableExtra(DownloadIntentService.RSS_RESULT_EXTRA);
+		//ViewGroup result = (ViewGroup)findViewById(R.id.results);
+		//result.removeAllViews();
+		//for (int i=0; i<rss.size(); i++) {
+		//	IllustrativeRSS.Item item = rss.get(i);
+		//	TextView v = new TextView(this);
+		//	v.setText(item.title);
+		//	result.addView(v);
+		//}
+	}
+
+	private void handleError(Intent data) {
+		// whatever you want
+	}
+
+	private void handleInvalidURL() {
+		// whatever you want
+	}
+
+
+
 }

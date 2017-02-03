@@ -1,4 +1,4 @@
-#Tue Jan 31 22:53:14 BRST 2017
+#Fri Feb 03 00:15:11 BRST 2017
 base.0=C\:\\Users\\Augusto\\AndroidStudioProjects\\AVarioAugusto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_cd662fe1e858598904b21105ae8a79de8788bcdc
 renamed.1=classes.dex
 renamed.0=classes2.dex
